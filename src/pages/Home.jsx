@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import "./Home.css";
+import { useState,useEffect } from "react";
 function Home() {
   return (
     <main>
@@ -48,7 +49,27 @@ function Home() {
             </div>
           </div>
           <div className="col-md-3">
-            <button className="btn search-btn w-100">Search</button>
+            <button className="btn search-btn w-100 ">Search</button>
+          </div>
+        </div>
+      </div>
+      <div className="featured-property">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-image-top">
+                  <div className="card-body"></div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-image-top">
+                  <div className="card-body"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
