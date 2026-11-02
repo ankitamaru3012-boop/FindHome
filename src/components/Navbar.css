@@ -1,0 +1,79 @@
+.navbar{
+    display: grid;  
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: #F8F5ED;
+    padding:0.1rem 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    
+}
+
+.navbar img{
+    height:auto;
+    width: 14rem; 
+}
+.fh-logo{
+    justify-self: start;
+}
+.btnsignin{
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    background-color:#123D2B ;   
+    color: #C6A15B; 
+    font-size: 15px;
+    border: 0;
+    justify-self: end;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.btnsignin:hover{
+background-color: #165c3f;
+color: #E7c58b;
+transform:scale(1.02);
+box-shadow: 0 4px 12px rgba(18, 61, 43, 0.18);
+}
+
+
+.navbar .links a{
+    text-decoration: none;
+    font-family: 'Garamond','Cormorant',serif;
+    color: #123D2B;
+    transition: color 0.2s ease;
+    position: relative;
+display: inline-block;
+}
+
+.links{
+    align-items: center;
+    display: flex;
+    gap:2rem ;
+    justify-self: center;
+
+}
+.links a:hover{
+    cursor: pointer;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #C6A15B;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+.btnsignin {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

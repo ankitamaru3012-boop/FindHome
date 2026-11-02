@@ -1,0 +1,102 @@
+.hero{
+    min-height: 70vh;
+    background-color: hsl(155, 54%, 15%) ;
+    color: #F8F5ED;
+    background-image:linear-gradient(to left,rgba(18, 61, 43, 0.2),rgba(18, 61, 43, 0.9)),
+    url("../assets/hero-villa.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+}
+
+.hero-content {
+    padding: 5rem 4rem;
+    max-width: 750px;
+}
+
+.hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    animation: fadeUp 1s ease-out;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.property-search {
+    background-color: #F8F5ED;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 1rem auto ;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.search-field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex:1;
+}
+
+.search-btn{
+    background-color: #123D2B !important;
+    color: #C6A15B;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 0;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.search-btn:hover{
+    background-color: #176947;
+    color:#E7C58B;
+    transform:scale(1.02);
+box-shadow: 0 4px 12px rgba(18, 61, 43, 0.18);
+}
+
+.search-field label{
+    color: #123D2B;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-field .form-control,
+.search-field .form-select {
+     border: 1px solid #C6A15B;
+    border-radius: 6px;
+}
+
+.search-field .form-control:focus,
+.search-field .form-select:focus {
+    border-color: #123D2B;
+    box-shadow: 0 0 0 4px rgba(18, 61, 43, 0.12);
+}
+
+.search-field .form-control,
+.search-field .form-select{
+    padding: 0.75rem;
+    font-size: 14px;
+}

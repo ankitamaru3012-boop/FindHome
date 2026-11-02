@@ -1,0 +1,55 @@
+
+{
+  "properties": [
+    {
+      "id": "1",
+      "title": "The Emerald Villa",
+      "type": "Villa",
+      "listingType": "Buy",
+      "price": 850000,
+      "currency": "EUR",
+      "city": "Barcelona",
+      "country": "Spain",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "area": 280,
+      "image": "",
+      "description": "A contemporary villa with spacious interiors and a beautiful private garden.",
+      "amenities": ["Garden", "Swimming Pool", "Parking"]
+    },
+    {
+      "id": "2",
+      "title": "Skyline Residence",
+      "type": "Apartment",
+      "listingType": "Rent",
+      "price": 4200,
+      "currency": "GBP",
+      "city": "London",
+      "country": "United Kingdom",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area": 110,
+      "image": "",
+      "description": "A refined city apartment with bright rooms and elegant contemporary finishes.",
+      "amenities": ["Gym", "Security", "Balcony"]
+    },
+    {
+      "id": "3",
+      "title": "The Palm Retreat",
+      "type": "House",
+      "listingType": "Buy",
+      "price": 1250000,
+      "currency": "USD",
+      "city": "Los Angeles",
+      "country": "United States",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area": 320,
+      "image": "",
+      "description": "A modern family home with open living spaces and a peaceful outdoor area.",
+      "amenities": ["Garden", "Garage", "Fireplace"]
+    }
+  ],
+  "users": [],
+  "enquiries": []
+}
