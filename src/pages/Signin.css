@@ -1,4 +1,6 @@
 .signin{
     background-color: #123D2B;
     color:goldenrod;
+    display: flex;
+    justify-items: center;
 }

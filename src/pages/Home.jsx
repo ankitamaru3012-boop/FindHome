@@ -1,7 +1,17 @@
 import Navbar from "../components/Navbar";
 import "./Home.css";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 function Home() {
+  const [properties, setProperties] = useState([]);
+  const getProperties = async () => {
+    const response = await axios.get("http://localhost:5000/properties");
+    setProperties(response.data);
+    console.log(response.data);
+  };
+  useEffect(() => {
+    getProperties();
+  }, []);
   return (
     <main>
       <Navbar></Navbar>
@@ -56,20 +66,22 @@ function Home() {
       <div className="featured-property">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
-              <div className="card">
-                <div className="card-image-top">
-                  <div className="card-body"></div>
+            {properties.map((property) => (
+              <div className="col-md-4" key={property.id}>
+                <div className="card">
+                  <div className="card-body">
+                    <h4>{property.title}</h4>
+                    <p>
+                      {property.city} , {property.country}
+                    </p>
+                    <h5 className="card-text">
+                      {property.currency} {property.price}
+                    </h5>
+                    <p>{property.bedrooms} Bedrooms</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card">
-                <div className="card-image-top">
-                  <div className="card-body"></div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

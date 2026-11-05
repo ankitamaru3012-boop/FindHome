@@ -7,11 +7,11 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-     <Routes>
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/saved" element={<Saved />} />
-<Route path="/list-property" element={<ListProperty />} />
-<Route path="/signin" element={<Signin />} />
+      <Route path="/list-property" element={<ListProperty />} />
+      <Route path="/signin" element={<Signin />} />
       <Route path="/discover" element={<Home />} />
     </Routes>
   );
